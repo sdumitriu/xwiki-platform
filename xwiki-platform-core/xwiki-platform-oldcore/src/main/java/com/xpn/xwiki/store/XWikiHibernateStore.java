@@ -2162,6 +2162,7 @@ public class XWikiHibernateStore extends XWikiHibernateBaseStore implements XWik
     // ---------------------------------------
 
     @Override
+    @Deprecated(since = "14.8RC1")
     public List<XWikiLink> loadLinks(long docId, XWikiContext inputxcontext, boolean bTransaction) throws XWikiException
     {
         XWikiContext context = getExecutionXContext(inputxcontext, true);
@@ -2202,6 +2203,7 @@ public class XWikiHibernateStore extends XWikiHibernateBaseStore implements XWik
     }
 
     @Override
+    @Deprecated(since = "14.8RC1")
     public List<DocumentReference> loadBacklinks(DocumentReference documentReference, boolean bTransaction,
         XWikiContext inputxcontext) throws XWikiException
     {
@@ -2222,6 +2224,7 @@ public class XWikiHibernateStore extends XWikiHibernateBaseStore implements XWik
     }
 
     @Override
+    @Deprecated(since = "14.8RC1")
     public List<DocumentReference> loadBacklinks(AttachmentReference attachmentReference, boolean bTransaction,
         XWikiContext inputxcontext) throws XWikiException
     {
@@ -2308,6 +2311,7 @@ public class XWikiHibernateStore extends XWikiHibernateBaseStore implements XWik
     }
 
     @Override
+    @Deprecated(since = "14.8RC1")
     public void saveLinks(XWikiDocument doc, XWikiContext inputxcontext, boolean bTransaction) throws XWikiException
     {
         XWikiContext context = getExecutionXContext(inputxcontext, true);
@@ -2424,6 +2428,7 @@ public class XWikiHibernateStore extends XWikiHibernateBaseStore implements XWik
     }
 
     @Override
+    @Deprecated(since = "14.8RC1")
     public void deleteLinks(long docId, XWikiContext inputxcontext, boolean bTransaction) throws XWikiException
     {
         XWikiContext context = getExecutionXContext(inputxcontext, true);
